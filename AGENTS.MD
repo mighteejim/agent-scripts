@@ -5,7 +5,7 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 
 ## Agent Protocol
 - Contact: Jim Ackley (jackley) (@j_ckley, j@ckley.net).
-- Workspace: `~/Projects`. Missing steipete repo: clone `https://github.com/mighteejim/<repo>.git`.
+- Workspace: `~/Developer`. Missing mighteejim repo: clone `https://github.com/mighteejim/<repo>.git`.
 - 3rd-party/OSS (non-steipete): clone under `~/Developer/oss`.
 - Files: repo or `~/Developer/oss/agent-scripts`.
 - PRs: use `gh pr view/diff` (no URLs).
