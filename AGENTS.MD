@@ -1,15 +1,13 @@
 # AGENTS.MD
 
-Peter owns this. Start: say hi + 1 motivating line.
+Jim owns this. Start: say hi + 1 motivating line.
 Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 
 ## Agent Protocol
-- Contact: Peter Steinberger (@steipete, steipete@gmail.com).
-- Workspace: `~/Projects`. Missing steipete repo: clone `https://github.com/steipete/<repo>.git`.
-- 3rd-party/OSS (non-steipete): clone under `~/Projects/oss`.
-- `~/Projects/manager`: private ops (domains/DNS, redirects/workers, runbooks).
-- “MacBook” / “Mac Studio” => SSH there; find hosts/IPs via `tailscale status`.
-- Files: repo or `~/Projects/agent-scripts`.
+- Contact: Jim Ackley (jackley) (@j_ckley, j@ckley.net).
+- Workspace: `~/Projects`. Missing steipete repo: clone `https://github.com/mighteejim/<repo>.git`.
+- 3rd-party/OSS (non-steipete): clone under `~/Developer/oss`.
+- Files: repo or `~/Developer/oss/agent-scripts`.
 - PRs: use `gh pr view/diff` (no URLs).
 - “Make a note” => edit AGENTS.md (shortcut; not a blocker). Ignore `CLAUDE.md`.
 - No `./runner`. Guardrails: use `trash` for deletes.
@@ -28,18 +26,14 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 - Style: telegraph. Drop filler/grammar. Min tokens (global AGENTS + replies).
 
 ## Screenshots (“use a screenshot”)
-- Pick newest PNG in `~/Desktop` or `~/Downloads`.
+- Pick newest PNG in `~/Desktop/Screenshots`
 - Verify it’s the right UI (ignore filename).
 - Size: `sips -g pixelWidth -g pixelHeight <file>` (prefer 2×).
 - Optimize: `imageoptim <file>` (install: `brew install imageoptim-cli`).
 - Replace asset; keep dimensions; commit; run gate; verify CI.
 
 ## Important Locations
-- Blog repo: `~/Projects/steipete.me`
-- Notes/Runbooks: `~/Projects/manager/docs/` (e.g. `mac-studio.md`, `mac-vm.md`)
-- OpenAI/Codex limits tracking: `~/Documents/steipete/codex limits.md`
-- Obsidian vault: `$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/steipete-notes`
-- Sparkle keys: `~/Library/CloudStorage/Dropbox/Backup/Sparkle`
+- Blog repo: `~/Developer/`
 
 ## Docs
 - Start: run docs list (`docs:list` script, or `bin/docs-list` here if present; ignore if not installed); open docs before coding.
@@ -97,23 +91,7 @@ Work style: telegraph; noun-phrases ok; drop grammar; min tokens.
 
 ## Tools
 
-Read `~/Projects/agent-scripts/tools.md` for the full tool catalog if it exists.
-
-### bird
-- X CLI: `~/Projects/bird/bird`. Cmds: `tweet`, `reply`, `read`, `thread`, `search`, `mentions`, `whoami`.
-- Uses Firefox cookies by default (`--firefox-profile` to switch).
-
-### sonoscli
-- Sonos CLI: `~/Projects/sonoscli/bin/sonos`. Cmds: `discover`, `status`, `play/pause/stop`, `volume set`, `group`.
-- SSDP can fail: use `--ip <speaker-ip>`.
-- Spotify SMAPI: `sonos smapi search --service "Spotify" --category tracks "query"`.
-
-### peekaboo
-- Screen tools: `~/Projects/Peekaboo`. Cmds: `capture`, `see`, `click`, `list`, `tools`, `permissions status`.
-- Needs Screen Recording + Accessibility. Docs: `~/Projects/Peekaboo/docs/commands/`.
-
-### sweetistics
-- X analytics app: `~/Projects/sweetistics`.
+Read `~/Developer/oss/agent-scripts/tools.md` for the full tool catalog if it exists.
 
 ### committer
 - Commit helper (PATH). Stages only listed paths; required here. Repo may also ship `./scripts/committer`.
